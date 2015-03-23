@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/AstSpv.qml</file>
+        <file>qml/CloseButton.qml</file>
+        <file>qml/Login.qml</file>
+        <file>qml/Logo.qml</file>
+        <file>qml/MainMenu.qml</file>
+        <file>qml/TabBar.qml</file>
+        <file>qml/TextBox.qml</file>
+        <file>qml/UserAdmin.qml</file>
+        <file>qml/AccessLevelsAdmin.qml</file>
+        <file>qml/UpdateUserlist.qml</file>
+        <file>qml/Userlist.qml</file>
+        <file>qml/DragBox.qml</file>
+        <file>qml/SetAccessLevel.qml</file>
+        <file>qml/StateButtonBG.qml</file>
+        <file>qml/ActivityLog.qml</file>
+        <file>qml/Combobox.qml</file>
+        <file>pix/CNC.jpg</file>
+        <file>pix/EMetal1.jpg</file>
+        <file>pix/EMetal2.jpg</file>
+        <file>pix/laser.jpg</file>
+        <file>pix/logo_orig.jpg</file>
+        <file>pix/logo.jpg</file>
+        <file>pix/Plasma.jpg</file>
+        <file>pix/Base.png</file>
+        <file>pix/drag.png</file>
+        <file>pix/EBois.png</file>
+        <file>pix/OutillageHackuarium.png</file>
+        <file>pix/State.png</file>
+        <file>pix/WorkshopGuru.png</file>
+        <file>pix/WorkshopNinja.png</file>
+        <file>pix/Expert.png</file>
+        <file>pix/Confirme.png</file>
+        <file>pix/Apprenti.png</file>
+        <file>pix/Debutant.png</file>
+        <file>pix/Rookie.png</file>
+        <file>pix/InterditIcon.png</file>
+        <file>sounds/CameraFlash.wav</file>
+    </qresource>
+</RCC>
