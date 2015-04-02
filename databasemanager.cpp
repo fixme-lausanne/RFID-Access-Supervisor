@@ -1,7 +1,6 @@
 #include "databasemanager.h"
 
 
-//Test
 
 void millisleep2(int ms)
 {
