@@ -109,15 +109,6 @@ bool DatabaseManager::createRFID_Table()
                          "roleId int, "
                          "roleName varchar(30))");
 
-   /*     ret = query.exec("create table timebank "
-                         "(id integer primary key, "
-                         "userId int, "
-                         "username varchar(20), "
-                         "minutesLeft int, "
-                         "username varchar(20), "
-                         "roleName varchar(30))");
-
-*/
         if(ret>0)
         {
             ret2 = query.exec(QString("insert into roles values(NULL,%1,'%2')").arg(1).arg("RFID Admin"));
