@@ -1,4 +1,4 @@
-/*#ifndef SOUNDS_H
+#ifndef SOUNDS_H
 #define SOUNDS_H
 
 #include <QObject>
@@ -21,4 +21,4 @@ public slots:
 };
 
 #endif // SOUNDS_H
-*/
+

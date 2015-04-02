@@ -1,4 +1,4 @@
-/*#include "sounds.h"
+#include "sounds.h"
 
 Sounds::Sounds(QObject *parent) :
     QObject(parent)
@@ -13,4 +13,3 @@ void Sounds::playCameraFlash()
     m_cameraFlash.play();
 }
 
-*/

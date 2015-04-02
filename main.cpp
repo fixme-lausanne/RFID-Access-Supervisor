@@ -18,8 +18,6 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     QtQuick2ApplicationViewer viewer;
-
-    //    QQmlApplicationEngine engine;
     QQmlContext *context = viewer.rootContext();
 
     Session ses;
@@ -49,10 +47,10 @@ int main(int argc, char *argv[])
     rxTxThread *ttyThread = new rxTxThread;
     ttyThread->moveToThread(&RxTxThread);
 
-    //Sounds mysounds;
+    Sounds mysounds;
 
 
-    //QObject::connect(ttyThread, SIGNAL(cardDetected()),&mysounds, SLOT(playCameraFlash()));
+    QObject::connect(ttyThread, SIGNAL(cardDetected()),&mysounds, SLOT(playCameraFlash()));
     QObject::connect(ttyThread, SIGNAL(cardRxLatest(QByteArray)),&svc.m_con, SLOT(analyseIncomming(QByteArray)));
     QObject::connect(&svc.m_con,SIGNAL(equipmentON(int)),ttyThread,SLOT(turnEquipementON(int)));
     QObject::connect(&svc.m_con,SIGNAL(equipmentOFF(int)),ttyThread,SLOT(turnEquipementOFF(int)));

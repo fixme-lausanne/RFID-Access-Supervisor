@@ -1,19 +1,5 @@
 #include "databasemanager.h"
 
-
-
-void millisleep2(int ms)
-{
-    if (ms>0)
-    {
-        struct timeval tv;
-        tv.tv_sec=0;
-        tv.tv_usec=ms*1000;
-        select(0, 0, 0, 0, &tv);
-    }
-}
-
-
 DatabaseManager::DatabaseManager(QObject *parent) :
     QObject(parent)
 {
@@ -293,5 +279,18 @@ void DatabaseManager::addLog(QString log)
         QSqlQuery query;
         QDateTime dt =  QDateTime::currentDateTime();
         ret=query.exec(QString("insert into activityLog values(NULL,'%1','%2')").arg(dt.date().currentDate().toString()).arg(log));
+    }
+}
+
+// Tools
+
+void millisleep2(int ms)
+{
+    if (ms>0)
+    {
+        struct timeval tv;
+        tv.tv_sec=0;
+        tv.tv_usec=ms*1000;
+        select(0, 0, 0, 0, &tv);
     }
 }
