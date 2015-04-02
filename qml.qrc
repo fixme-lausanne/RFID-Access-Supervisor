@@ -37,6 +37,7 @@
         <file>pix/Debutant.png</file>
         <file>pix/Rookie.png</file>
         <file>pix/InterditIcon.png</file>
+        <file>pix/garland_logo.png</file>
         <file>sounds/CameraFlash.wav</file>
     </qresource>
 </RCC>
